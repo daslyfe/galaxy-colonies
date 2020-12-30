@@ -1,0 +1,4 @@
+
+const trade = (activePlayer, otherPlayer) => {
+
+}
