@@ -11,13 +11,22 @@ function Player(name, playerID) {
       squid: 0,
       flora: 0,
       carbon: 0,
-      forTrade: {
+    },
+    trade: {
+      offer: {
         ceramics: 0,
         fuel: 0,
         squid: 0,
         flora: 0,
-        carbon: 0
-      }
+        carbon: 0,
+      },
+      for: {
+        ceramics: 0,
+        fuel: 0,
+        squid: 0,
+        flora: 0,
+        carbon: 0,
+      },
     },
     developmentCards: {
       victoryPoints: {
@@ -69,9 +78,9 @@ function Player(name, playerID) {
 export const addPlayer = (name, playerList) => {
   const playerID = Uniqid();
   playerList[playerId] = new Player(name, playerID);
-}
+};
 
 export const deletePlayer = (playerID, playerList) => {
   delete playerList[playerId];
-}
+};
 export default Player;
